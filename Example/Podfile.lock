@@ -1,0 +1,16 @@
+PODS:
+  - GradientKit (0.1.0)
+
+DEPENDENCIES:
+  - GradientKit (from `../`)
+
+EXTERNAL SOURCES:
+  GradientKit:
+    :path: ../
+
+SPEC CHECKSUMS:
+  GradientKit: 948c58443c9ff6b001b4cb4b7f00b789f003f957
+
+PODFILE CHECKSUM: 3246f27d3cb22e2c7d18444a4d8359cb117550a2
+
+COCOAPODS: 1.1.1

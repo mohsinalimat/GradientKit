@@ -1,0 +1,6 @@
+framework module Pods_GradientKit_Example {
+  umbrella header "Pods-GradientKit_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

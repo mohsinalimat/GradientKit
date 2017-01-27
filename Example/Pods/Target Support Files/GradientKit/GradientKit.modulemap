@@ -1,0 +1,6 @@
+framework module GradientKit {
+  umbrella header "GradientKit-umbrella.h"
+
+  export *
+  module * { export * }
+}
