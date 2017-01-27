@@ -36,8 +36,11 @@ public class LinearGradientLayer: GradientLayer {
         let colorSpace = CGColorSpaceCreateDeviceRGB()
         let options: CGGradientDrawingOptions = [.drawsAfterEndLocation]
         
-        let gradient = CGGradient(colorsSpace: colorSpace, colors: colors.map({ $0.cgColor }) as CFArray, locations: locations)
-        ctx.drawLinearGradient(gradient!, start: startPoint, end: endPoint, options: options)
+        if let gradient = CGGradient(colorsSpace: colorSpace, colors: colors.map({ $0.cgColor }) as CFArray, locations: locations) {
+            ctx.drawLinearGradient(gradient, start: startPoint, end: endPoint, options: options)
+        } else {
+            print("unable to create Gradient")
+        }
     }
     
     func startAndEndPoints(direction: Direction) -> (CGPoint, CGPoint) {

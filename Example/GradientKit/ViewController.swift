@@ -14,7 +14,10 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        let layer = LinearGradientLayer(direction: .angle(20))
+        
+        let colors = [UIColor.red, UIColor.green]
+
+        let layer = RadialGradientLayer()
         layer.frame = view.bounds
         view.layer.addSublayer(layer)
     }

@@ -12,6 +12,7 @@
 		39B9C2611E3A430200DE1819 /* UIColor+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39B9C2601E3A430200DE1819 /* UIColor+Hex.swift */; };
 		39B9C2651E3B4B5600DE1819 /* LinearGradientLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39B9C2641E3B4B5600DE1819 /* LinearGradientLayer.swift */; };
 		39B9C2671E3B55E500DE1819 /* GradientLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39B9C2661E3B55E500DE1819 /* GradientLayer.swift */; };
+		39B9C2691E3B74E300DE1819 /* RadialGradientLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39B9C2681E3B74E300DE1819 /* RadialGradientLayer.swift */; };
 		4C1B5FAF750BFEDD6DC596D6272DE327 /* Pods-GradientKit_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2CDEE8CAE2EDE1D1A11F5B1552749207 /* Pods-GradientKit_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		65822D5DB01A7B8EC9B86703AAD406D4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
 		74EC93D23A434A7E393C6AAF403BB705 /* GradientKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FAAA662AA06301DFF48428FF98EA97A /* GradientKit-dummy.m */; };
@@ -48,6 +49,7 @@
 		39B9C2601E3A430200DE1819 /* UIColor+Hex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Hex.swift"; sourceTree = "<group>"; };
 		39B9C2641E3B4B5600DE1819 /* LinearGradientLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LinearGradientLayer.swift; sourceTree = "<group>"; };
 		39B9C2661E3B55E500DE1819 /* GradientLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientLayer.swift; sourceTree = "<group>"; };
+		39B9C2681E3B74E300DE1819 /* RadialGradientLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RadialGradientLayer.swift; sourceTree = "<group>"; };
 		3E9106CF7721D7EB3AE69E583E66ECA8 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4DDEA6140E4AC181C2B8D781841341FB /* Pods-GradientKit_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-GradientKit_Example-umbrella.h"; sourceTree = "<group>"; };
 		53B64F61492EE04C94CA9504A661CF8E /* Pods-GradientKit_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-GradientKit_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
@@ -213,6 +215,7 @@
 				39B9C2601E3A430200DE1819 /* UIColor+Hex.swift */,
 				39B9C2641E3B4B5600DE1819 /* LinearGradientLayer.swift */,
 				39B9C2661E3B55E500DE1819 /* GradientLayer.swift */,
+				39B9C2681E3B74E300DE1819 /* RadialGradientLayer.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -358,6 +361,7 @@
 				39B9C2671E3B55E500DE1819 /* GradientLayer.swift in Sources */,
 				74EC93D23A434A7E393C6AAF403BB705 /* GradientKit-dummy.m in Sources */,
 				39B9C2651E3B4B5600DE1819 /* LinearGradientLayer.swift in Sources */,
+				39B9C2691E3B74E300DE1819 /* RadialGradientLayer.swift in Sources */,
 				39B9C25F1E3A391100DE1819 /* Colors.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
