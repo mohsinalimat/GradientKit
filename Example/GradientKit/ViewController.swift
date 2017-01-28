@@ -15,9 +15,10 @@ class ViewController: UIViewController {
         super.viewDidLoad()
 
         
-        let colors = [UIColor.red, UIColor.green]
+        let colors = [UIColor.red, UIColor.green, UIColor.yellow, UIColor.blue, UIColor.purple,  UIColor.red]
 
-        let layer = RadialGradientLayer()
+        let layer = AngleGradientLayer()
+        layer.colors = colors
         layer.frame = view.bounds
         view.layer.addSublayer(layer)
     }
