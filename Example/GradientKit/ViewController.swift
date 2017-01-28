@@ -19,6 +19,8 @@ class ViewController: UIViewController {
 
         let layer = AngleGradientLayer()
         layer.colors = colors
+        layer.startPoint = CGPoint(x: 0, y: 0)
+        layer.endPoint = CGPoint(x: 1, y: 1)
         layer.frame = view.bounds
         view.layer.addSublayer(layer)
     }

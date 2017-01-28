@@ -11,11 +11,19 @@ import QuartzCore
 
 public class AngleGradientLayer: GradientLayer {
     
-    public var scale: CGFloat = 1.0
-    public var startPoint: CGPoint?
-    public var endPoint: CGPoint?
+    public var startPoint: CGPoint? {
+        didSet {
+            setNeedsDisplay()
+        }
+    }
     
-    fileprivate typealias PixelData = [RGBA]
+    public var endPoint: CGPoint? {
+        didSet {
+            setNeedsDisplay()
+        }
+    }
+    
+    private var scale: CGFloat = 1.0
     
     override public func draw(in ctx: CGContext) {
         ctx.saveGState()
@@ -133,6 +141,7 @@ public class AngleGradientLayer: GradientLayer {
 }
 
 fileprivate let π = Float(M_PI)
+fileprivate typealias PixelData = [RGBA]
 
 fileprivate struct RGBA {
     var r: UInt8
