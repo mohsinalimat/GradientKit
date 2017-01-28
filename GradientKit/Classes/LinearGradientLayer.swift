@@ -21,7 +21,7 @@ public class LinearGradientLayer: GradientLayer {
 
     public var direction: Direction = .vertical
     
-    public convenience init(colors: [UIColor] = Colors.randomPair(), direction: Direction = .vertical, locations: [CGFloat] = [0.0, 1.0]) {
+    public convenience init(colors: [UIColor] = Colors.randomPair(), direction: Direction = .vertical, locations: [CGFloat]? = nil) {
         self.init()
         
         self.locations = locations

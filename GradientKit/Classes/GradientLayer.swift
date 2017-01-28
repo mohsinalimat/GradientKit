@@ -10,7 +10,7 @@ import Foundation
 
 public class GradientLayer: CALayer {
 
-    public var locations: [CGFloat] = [0.0, 1.0] {
+    public var locations: [CGFloat]? {
         didSet {
             setNeedsDisplay()
         }
@@ -36,10 +36,10 @@ public class GradientLayer: CALayer {
         super.init(layer: layer)
     }
     
-    public convenience init(colors: [UIColor], locations: [CGFloat] = [0.0, 1.0]) {
+    public convenience init(colors: [UIColor], locations: [CGFloat]? = nil) {
         self.init()
 
-        self.locations = locations
         self.colors = colors
+        self.locations = locations
     }
 }

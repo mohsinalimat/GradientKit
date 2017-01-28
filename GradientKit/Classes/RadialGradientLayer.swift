@@ -17,7 +17,7 @@ public class RadialGradientLayer: GradientLayer {
 
     public var source: Source = .center
     
-    public convenience init(colors: [UIColor] = Colors.randomPair(), source: Source = .center, locations: [CGFloat] = [0.0, 1.0]) {
+    public convenience init(colors: [UIColor] = Colors.randomPair(), source: Source = .center, locations: [CGFloat]? = nil) {
         self.init()
         
         self.locations = locations
