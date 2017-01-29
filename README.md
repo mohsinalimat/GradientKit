@@ -11,7 +11,7 @@ Gradient Kit makes super easy to create gradient layers. It supports Linear, rad
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
-1. Creating Linear gradients 
+### 1. Creating Linear gradients 
 
 ```swift
 
@@ -46,6 +46,40 @@ view.layer.addSublayer(layer1)
 ```
 <img src="https://raw.githubusercontent.com/aashishdhawan/GradientKit/master/Images/linear.png" alt="Linear" align="center" />
 
+### 2. Creating Radial gradients 
+
+```swift
+
+// Creating radial gradient from center 
+let layer1 = RadialGradientLayer()
+layer1.frame = CGRect(x: 0, y: 0, width: width, height: height)
+view.layer.addSublayer(layer1)
+
+radial gradient from topleft
+let layer1 = RadialGradientLayer(source: .topLeft)
+layer1.colors = [.red, .orange, .yellow]
+layer1.frame = CGRect(x: 0, y: 0, width: width, height: height)
+view.layer.addSublayer(layer1)
+
+// Creating radial gradient from top 
+let layer1 = RadialGradientLayer(source: .top)
+layer1.colors = [.red, .orange, .yellow]
+layer1.frame = CGRect(x: 0, y: 0, width: width, height: height)
+view.layer.addSublayer(layer1)
+
+// Creating radial gradient from left 
+let layer1 = RadialGradientLayer(source: .left)
+layer1.colors = [.red, .orange, .yellow]
+layer1.frame = CGRect(x: 0, y: 0, width: width, height: height)
+view.layer.addSublayer(layer1)
+
+// Creating radial gradient with custom angle
+let layer1 = RadialGradientLayer()
+layer1.colors = [.red, .red.withAlphaComponent(0.2)]
+layer1.frame = CGRect(x: 0, y: 0, width: width, height: height)
+view.layer.addSublayer(layer1)
+```
+<img src="https://raw.githubusercontent.com/aashishdhawan/GradientKit/master/Images/radial.png" alt="Linear" align="center" />
 
 ## Requirements
 

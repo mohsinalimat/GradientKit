@@ -18,8 +18,8 @@ class ViewController: UIViewController {
         let width = view.bounds.size.width
         let height = view.bounds.size.height
         
-        let layer1 = LinearGradientLayer(direction: .angle(10))
-        layer1.colors = [UIColor.red, UIColor.orange, UIColor.yellow]
+        let layer1 = RadialGradientLayer(source: .center)
+        layer1.colors = [UIColor.red, UIColor.red.withAlphaComponent(0.2)]
         layer1.frame = CGRect(x: 0, y: 0, width: width, height: height)
         view.layer.addSublayer(layer1)
         
