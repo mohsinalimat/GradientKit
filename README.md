@@ -11,6 +11,40 @@ Gradient Kit makes super easy to create gradient layers. It supports Linear, rad
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
+1. Creating Linear gradients 
+
+```swift
+
+// Creating vertical gradient with random colors 
+let layer1 = LinearGradientLayer()
+layer1.frame = CGRect(x: 0, y: 0, width: width, height: height)
+view.layer.addSublayer(layer1)
+
+// Creating vertical gradient with custom colors 
+let layer1 = LinearGradientLayer(direction: .vertical)
+layer1.colors = [.red, .orange, .yellow]
+layer1.frame = CGRect(x: 0, y: 0, width: width, height: height)
+view.layer.addSublayer(layer1)
+
+// Creating horizontal gradient with custom colors 
+let layer1 = LinearGradientLayer(direction: .horizontal)
+layer1.colors = [.red, .orange, .yellow]
+layer1.frame = CGRect(x: 0, y: 0, width: width, height: height)
+view.layer.addSublayer(layer1)
+
+// Creating diagonal gradient with custom colors 
+let layer1 = LinearGradientLayer(direction: .diagonal(true))
+layer1.colors = [.red, .orange, .yellow]
+layer1.frame = CGRect(x: 0, y: 0, width: width, height: height)
+view.layer.addSublayer(layer1)
+
+// Creating diagonal gradient with custom angle
+let layer1 = LinearGradientLayer(direction: .angle(45))
+layer1.colors = [.red, .orange, .yellow]
+layer1.frame = CGRect(x: 0, y: 0, width: width, height: height)
+view.layer.addSublayer(layer1)
+```
+
 ## Requirements
 
 ## Installation
@@ -25,6 +59,7 @@ pod "GradientKit"
 ## Author
 
 Aashish Dhawan, aashishdhawan@gmail.com
+Twitter: - [@aashish_dhawan](https://twitter.com/aashish_dhawan)
 
 ## Credits 
 
