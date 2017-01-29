@@ -23,7 +23,7 @@ public class AngleGradientLayer: GradientLayer {
         }
     }
     
-    private var scale: CGFloat = UIScreen.main.scale
+    private var scale: CGFloat = 1.0
     
     public convenience init(colors: [UIColor], locations: [CGFloat]? = nil) {
         self.init()
@@ -41,6 +41,8 @@ public class AngleGradientLayer: GradientLayer {
         if let img = gradientImage() {
             ctx.draw(img, in: bounds)
         }
+        
+        ctx.restoreGState()
     }
     
     fileprivate func gradientImage() -> CGImage? {

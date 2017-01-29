@@ -41,6 +41,8 @@ public class LinearGradientLayer: GradientLayer {
         } else {
             print("unable to create Gradient")
         }
+        
+        ctx.restoreGState()
     }
     
     func startAndEndPoints(direction: Direction) -> (CGPoint, CGPoint) {

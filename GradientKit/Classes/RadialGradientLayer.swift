@@ -32,11 +32,14 @@ public class RadialGradientLayer: GradientLayer {
         let colorSpace = CGColorSpaceCreateDeviceRGB()
         
         let (startCenter, endCenter, startRadius, endRadius) = centersAndRadius(source: source)
+        
         if let gradient = CGGradient(colorsSpace: colorSpace, colors: colors.map({ $0.cgColor }) as CFArray, locations: locations) {
             ctx.drawRadialGradient(gradient, startCenter: startCenter, startRadius: startRadius, endCenter: endCenter, endRadius: endRadius, options: options)
         } else {
             print("unable to create Gradient")
         }
+        
+        ctx.restoreGState()
     }
     
     func centersAndRadius(source: Source) -> (CGPoint, CGPoint, CGFloat, CGFloat) {

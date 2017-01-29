@@ -120,4 +120,20 @@ public class Colors {
         let random = Int(arc4random_uniform(UInt32(allColorPairs.count)))
         return allColorPairs[random].map({ UIColor(hex: $0) })
     }
+    
+    static public func randomColors(numberOfColors count: Int) -> [UIColor] {
+        var colors = [UIColor]()
+        
+        let degreeIncrement: Int = 360 / count - 1
+        for degree in stride(from: 0, to: 360, by: degreeIncrement) {
+            let hue: CGFloat = 1.0 * (CGFloat(degree) / 360.0)
+            let color = UIColor(hue: hue, saturation: 1.0, brightness: 1.0, alpha: 1.0)
+            colors.append(color)
+        }
+        
+        if let first = colors.first {
+            colors.append(first)
+        }
+        return colors
+    }
 }
