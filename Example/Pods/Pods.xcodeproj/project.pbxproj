@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		0656ACCF363F9E5A9818E27B6DAB6A11 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
 		3958F53C1E3CC98C00C31F37 /* AngleGradientLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3958F53B1E3CC98C00C31F37 /* AngleGradientLayer.swift */; };
+		3958F53E1E3DD44400C31F37 /* UIColor+Gradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3958F53D1E3DD44400C31F37 /* UIColor+Gradient.swift */; };
+		3958F5401E3DD76B00C31F37 /* UIImage+CALayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3958F53F1E3DD76B00C31F37 /* UIImage+CALayer.swift */; };
 		39B9C25F1E3A391100DE1819 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39B9C25E1E3A391100DE1819 /* Colors.swift */; };
 		39B9C2611E3A430200DE1819 /* UIColor+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39B9C2601E3A430200DE1819 /* UIColor+Hex.swift */; };
 		39B9C2651E3B4B5600DE1819 /* LinearGradientLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39B9C2641E3B4B5600DE1819 /* LinearGradientLayer.swift */; };
@@ -47,6 +49,8 @@
 		2FEF9D648DA96B8484B18315ABB5BBCB /* Pods-GradientKit_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-GradientKit_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		33B150825064F22BE31EBAA3AEF50E61 /* Pods-GradientKit_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-GradientKit_Tests.modulemap"; sourceTree = "<group>"; };
 		3958F53B1E3CC98C00C31F37 /* AngleGradientLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AngleGradientLayer.swift; sourceTree = "<group>"; };
+		3958F53D1E3DD44400C31F37 /* UIColor+Gradient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Gradient.swift"; sourceTree = "<group>"; };
+		3958F53F1E3DD76B00C31F37 /* UIImage+CALayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+CALayer.swift"; sourceTree = "<group>"; };
 		39B9C25E1E3A391100DE1819 /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		39B9C2601E3A430200DE1819 /* UIColor+Hex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Hex.swift"; sourceTree = "<group>"; };
 		39B9C2641E3B4B5600DE1819 /* LinearGradientLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LinearGradientLayer.swift; sourceTree = "<group>"; };
@@ -214,11 +218,13 @@
 			isa = PBXGroup;
 			children = (
 				39B9C25E1E3A391100DE1819 /* Colors.swift */,
-				39B9C2601E3A430200DE1819 /* UIColor+Hex.swift */,
 				39B9C2661E3B55E500DE1819 /* GradientLayer.swift */,
 				39B9C2641E3B4B5600DE1819 /* LinearGradientLayer.swift */,
 				39B9C2681E3B74E300DE1819 /* RadialGradientLayer.swift */,
 				3958F53B1E3CC98C00C31F37 /* AngleGradientLayer.swift */,
+				39B9C2601E3A430200DE1819 /* UIColor+Hex.swift */,
+				3958F53D1E3DD44400C31F37 /* UIColor+Gradient.swift */,
+				3958F53F1E3DD76B00C31F37 /* UIImage+CALayer.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -361,12 +367,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				39B9C2611E3A430200DE1819 /* UIColor+Hex.swift in Sources */,
+				3958F5401E3DD76B00C31F37 /* UIImage+CALayer.swift in Sources */,
 				39B9C2671E3B55E500DE1819 /* GradientLayer.swift in Sources */,
 				3958F53C1E3CC98C00C31F37 /* AngleGradientLayer.swift in Sources */,
 				74EC93D23A434A7E393C6AAF403BB705 /* GradientKit-dummy.m in Sources */,
 				39B9C2651E3B4B5600DE1819 /* LinearGradientLayer.swift in Sources */,
 				39B9C2691E3B74E300DE1819 /* RadialGradientLayer.swift in Sources */,
 				39B9C25F1E3A391100DE1819 /* Colors.swift in Sources */,
+				3958F53E1E3DD44400C31F37 /* UIColor+Gradient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

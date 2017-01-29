@@ -23,8 +23,15 @@ public class AngleGradientLayer: GradientLayer {
         }
     }
     
-    private var scale: CGFloat = 1.0
+    private var scale: CGFloat = UIScreen.main.scale
     
+    public convenience init(colors: [UIColor], locations: [CGFloat]? = nil) {
+        self.init()
+        
+        self.colors = colors
+        self.locations = locations
+    }
+
     override public func draw(in ctx: CGContext) {
         ctx.saveGState()
         

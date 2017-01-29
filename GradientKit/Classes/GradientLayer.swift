@@ -8,6 +8,10 @@
 
 import Foundation
 
+public enum GradientType {
+    case linear, radial, angle
+}
+
 public class GradientLayer: CALayer {
 
     public var locations: [CGFloat]? {
@@ -36,7 +40,7 @@ public class GradientLayer: CALayer {
         super.init(layer: layer)
     }
     
-    public convenience init(colors: [UIColor], locations: [CGFloat]? = nil) {
+    public convenience init(colors: [UIColor], locations: [CGFloat]?) {
         self.init()
 
         self.colors = colors
