@@ -1,4 +1,4 @@
-Â# GradientKit
+# GradientKit
 
 [![CI Status](http://img.shields.io/travis/Aashish Dhawan/GradientKit.svg?style=flat)](https://travis-ci.org/Aashish Dhawan/GradientKit)
 [![Version](https://img.shields.io/cocoapods/v/GradientKit.svg?style=flat)](http://cocoapods.org/pods/GradientKit)
@@ -95,6 +95,8 @@ layer1.colors = [.red, .green, .blue, .magenta, .red]
 layer1.frame = CGRect(x: 0, y: 0, width: width, height: height)
 view.layer.addSublayer(layer1)
 
+Note: Angle gradients are computation heavy and should be used on small views.
+
 ```
 <img src="https://raw.githubusercontent.com/aashishdhawan/GradientKit/master/Images/angle.png" alt="angle" align="center" />
 
@@ -117,7 +119,43 @@ linearGradient.frame = view.frame
 self.view.backgroundColor = UIColor.gradient(withLayer: linearGradient)
 
 ```
+### 5. Using as backgroundColor and borderColor
 
+<img src="https://raw.githubusercontent.com/aashishdhawan/GradientKit/master/Images/text.png" alt="angle" align="center" />
+<img src="https://raw.githubusercontent.com/aashishdhawan/GradientKit/master/Images/button.png" alt="angle" align="center" />
+
+### 6. More fun with simple animations
+
+``` swift
+// animation 1
+let view = UIView()
+view.frame = CGRect(x: 30, y: 30, width: 200, height: 200)
+view.layer.cornerRadius = 100
+view.clipsToBounds = true
+
+let layer = AngleGradientLayer()
+layer.colors = Colors.randomColors(numberOfColors: 5)
+layer.frame = view.bounds
+layer.rotate()
+view.layer.addSublayer(layer)
+
+self.view.addSubview(view)
+
+// animation 2
+
+let colors1 = Colors.randomPair()
+let colors2 = Colors.randomPair()
+let layer = CAGradientLayer()
+layer.colors = colors1
+layer.startPoint = CGPoint(x:0, y: 0)
+layer.endPoint = CGPoint(x:1, y: 1)
+layer.animateColors(from: colors1, to: colors2, duration: 3)
+layer.frame = view.bounds
+view.layer.addSublayer(layer)
+```
+
+<img src="https://raw.githubusercontent.com/aashishdhawan/GradientKit/master/Images/anim1.gif" alt="angle" align="center" />
+<img src="https://raw.githubusercontent.com/aashishdhawan/GradientKit/master/Images/anim2.gif" alt="angle" align="center" />
 
 ## Requirements
 
