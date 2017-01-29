@@ -15,6 +15,16 @@ class ViewController: UIViewController {
         super.viewDidLoad()
 
         
+        let width = view.bounds.size.width
+        let height = view.bounds.size.height
+        
+        let layer1 = LinearGradientLayer(direction: .angle(10))
+        layer1.colors = [UIColor.red, UIColor.orange, UIColor.yellow]
+        layer1.frame = CGRect(x: 0, y: 0, width: width, height: height)
+        view.layer.addSublayer(layer1)
+        
+        
+        
     }
 }
 

@@ -44,6 +44,8 @@ layer1.colors = [.red, .orange, .yellow]
 layer1.frame = CGRect(x: 0, y: 0, width: width, height: height)
 view.layer.addSublayer(layer1)
 ```
+<img src="https://raw.githubusercontent.com/aashishdhawan/GradientKit/master/Images/linear.png" alt="Linear" align="center" />
+
 
 ## Requirements
 
