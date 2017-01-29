@@ -33,7 +33,6 @@ public extension CAGradientLayer {
     }
 }
 
-
 public extension GradientLayer {
 
     public func rotate(duration: Double = 3.0) {
