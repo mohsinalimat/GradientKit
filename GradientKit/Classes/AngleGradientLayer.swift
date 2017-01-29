@@ -47,8 +47,8 @@ public class AngleGradientLayer: GradientLayer {
     
     fileprivate func gradientImage() -> CGImage? {
         let size = bounds.size
-        let width = Int(size.width * (scale ?? UIScreen.main.scale))
-        let height = Int(size.height * (scale ?? UIScreen.main.scale))
+        let width = Int(size.width * scale)
+        let height = Int(size.height * scale)
         let bitsPerComponent: Int = MemoryLayout<UInt8>.size * 8
         let bytesPerPixel: Int = bitsPerComponent * 4 / 8
         let bytesPerRow = width * bytesPerPixel
@@ -70,13 +70,11 @@ public class AngleGradientLayer: GradientLayer {
     }
     
     fileprivate func populatePixelData(point: CGPoint) -> RGBA {
-        let width = Int(bounds.size.width)
-        let height = Int(bounds.size.height)
         let g0 = startPoint ?? CGPoint(x: 0.5, y: 0.5)
         let g1 = endPoint ?? CGPoint(x: 1.0, y: 0.5)
 
         let t = conicalGradientStop(point, bounds.size, g0, g1)
-        let locs = (locations ?? [0.0, 1.0]).map({ Float($0) }) ?? [0.0, 1.0]
+        let locs = (locations ?? [0.0, 1.0]).map({ Float($0) })
     
         return interpolatedColor(t, colors, locs)
     }
@@ -97,7 +95,7 @@ public class AngleGradientLayer: GradientLayer {
         assert(!colors.isEmpty)
         
         var locs = locations
-        if locations == nil || locations.count != colors.count {
+        if locations.count != colors.count {
             locs = uniformLocationsWithCount(colors.count)
         }
         
