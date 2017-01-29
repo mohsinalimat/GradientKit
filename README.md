@@ -55,21 +55,18 @@ let layer1 = RadialGradientLayer()
 layer1.frame = CGRect(x: 0, y: 0, width: width, height: height)
 view.layer.addSublayer(layer1)
 
-radial gradient from topleft
+// Creating radial gradient from topleft
 let layer1 = RadialGradientLayer(source: .topLeft)
-layer1.colors = [.red, .orange, .yellow]
 layer1.frame = CGRect(x: 0, y: 0, width: width, height: height)
 view.layer.addSublayer(layer1)
 
 // Creating radial gradient from top 
 let layer1 = RadialGradientLayer(source: .top)
-layer1.colors = [.red, .orange, .yellow]
 layer1.frame = CGRect(x: 0, y: 0, width: width, height: height)
 view.layer.addSublayer(layer1)
 
 // Creating radial gradient from left 
 let layer1 = RadialGradientLayer(source: .left)
-layer1.colors = [.red, .orange, .yellow]
 layer1.frame = CGRect(x: 0, y: 0, width: width, height: height)
 view.layer.addSublayer(layer1)
 
